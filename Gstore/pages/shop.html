@@ -39,8 +39,8 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-bs-toggle="dropdown">My Account</button>
                         <div class="dropdown-menu dropdown-menu-end">
-                            <button class="dropdown-item" type="button">Sign in</button>
-                            <button class="dropdown-item" type="button">Sign up</button>
+                            <button class="dropdown-item" type="button">profile</button>
+                            <button class="dropdown-item" type="button">log out</button>
                         </div>
                     </div>
                     <div class="btn-group mx-2">
@@ -90,8 +90,66 @@
                 </form>
             </div>
             <div class="col-lg-4 col-6 text-end">
-                <p class="m-0">Customer Service</p>
-                <h5 class="m-0">+012 345 6789</h5>
+                <!-- Modal Button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    Register
+                </button>
+                <!--log in modal-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Register Modal -->
+                <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -573,7 +631,7 @@
                     <div class="col-12">
                         <nav>
                             <ul class="pagination justify-content-center">
-                                <li class="page-item disabled"><a class="page-link" href="#">Previous</span></a></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                                 <li class="page-item"><a class="page-link" href="#">3</a></li>

@@ -119,6 +119,7 @@
     <Content Include="pages\contact.html" />
     <Content Include="pages\detail.html" />
     <Content Include="pages\inedx.html" />
+    <Content Include="pages\login.html" />
     <Content Include="pages\shop.html" />
     <Content Include="pages\Style.css" />
     <Content Include="Web.config" />
